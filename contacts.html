@@ -47,7 +47,7 @@
 
     <h1>формы</h1>
 
-    <form action="">
+    <form action="" method="post">
         <fieldset>
             <legend>User information</legend>
             <label for="username">Your name:</label>
@@ -95,7 +95,7 @@
             <label for="bio">Ваша биография:</label><br>
             <textarea name="bio" id="bio" cols="30" rows="10" maxlength="150"></textarea><br>
             <label for="avatar">Ваша фотография:</label><br>
-            <input type="file" name="avatar" id="avatar" accept="image/*" multiple>
+            <input type="file" name="avatar" id="avatar" accept=".pdf, image/*" multiple>
         </fieldset>
         <input type="submit" value="Сохранить">
         <input type="reset" value="Очистить форму">
