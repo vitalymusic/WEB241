@@ -51,20 +51,20 @@
         <fieldset>
             <legend>User information</legend>
             <label for="username">Your name:</label>
-            <input type="text" name="username" id="username">
+            <input type="text" name="username" id="username" maxlength="10" minlength="3" required>
             <label for="surname">Your surname:</label>
-            <input type="text" name="surname" id="surname">
+            <input type="text" name="surname" id="surname" required>
             <label for="date">Your date of birth:</label>
             <input type="date" name="date" id="date">
         </fieldset>
         <fieldset>
             <legend>User password</legend>
             <label for="pass">Type your password:</label>
-            <input type="password" name="pass" id="pass">
+            <input type="password" name="pass" id="pass" pattern="([A-z])+([0-9])+([\!,\_\@])" required>
             <label for="pass-repeat">Repeat your password:</label>
-            <input type="password" name="pass-repeat" id="pass-repeat">
+            <input type="password" name="pass-repeat" id="pass-repeat" pattern="([A-z])+([0-9])+([\!,\_\@])" required>
         </fieldset>
-        <fieldset>
+        <fieldset disabled>
             Ваша любимая марка авто:<br>
             <input type="radio" name="user_select" id="userselect1" value="Audi">
             <label for="userselect1">Audi</label><br>
@@ -73,17 +73,36 @@
             <input type="radio" name="user_select" id="userselect3" value="BMW">
             <label for="userselect3">BMW</label>
         </fieldset>
+        <fieldset>
+            <label for="job">Выберите профессию:</label>
+            <select name="job" id="job">
+                <option value="">-</option>
+                <option value="Программист">Программист</option>
+                <option value="Бухгалтер">Бухгалтер</option>
+                <option value="Преподаватель" selected>Преподаватель</option>
+            </select>
+            <div>
+                <label>Ваше место работы:</label><br>
+                <input type="date" name="" placeholder="Дата начала">
+                -
+                <input type="date" name="" placeholder="Дата увольнения">
+                -
+                <input type="text" name="" placeholder="Должность">
+                <button>+Добавить</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Ваша биография:</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" maxlength="150"></textarea><br>
+            <label for="avatar">Ваша фотография:</label><br>
+            <input type="file" name="avatar" id="avatar" accept="image/*" multiple>
+        </fieldset>
+        <input type="submit" value="Сохранить">
+        <input type="reset" value="Очистить форму">
 
 
-
-
-
-
-
-
-
-
-
+        <input type="number" name="number" id="" max="100" min="0" step="5">
+        <input type="range" name="number2" id="" max="100" min="0">
 
     </form>
 
