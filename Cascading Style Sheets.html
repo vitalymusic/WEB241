@@ -58,8 +58,55 @@
         }
 
 
+        table{
+            width: 100%;
+        }
+        table tr{
+            background-color: cadetblue;
+            height: 100px;
+        }
+        table td{
+            color: red;
+        }
+
+        table tr:nth-child(even){
+            /* odd */
+            background-color: rgb(141, 237, 240);
+        }
+
+        table tr:nth-child(2){
+            background-color: rgb(141, 237, 240);
+        }
+
+        table tr:nth-child(2n){
+            background-color: rgb(141, 237, 240);
+        }
+
+        *{
+            color:black;
+        }
+        html{
+            background-color: beige;
+        }
+        :root{
+            color:black;
+        }
 
 
+
+        input[type="text"]{
+            color:red;
+        }
+        input[type="password"]{
+            color:rgb(11, 231, 29);
+        }
+
+
+
+        h1::after,h1::before{
+            content: "*";
+            color:red;
+        }
     </style>
 
 
@@ -145,6 +192,31 @@
                 <td></td>
                 <td></td>
             </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
 
     </main>
@@ -153,7 +225,8 @@
 
         </address>
         <form action="">
-
+            <input type="text" name="" id="" >
+            <input type="password" name="" id="">
         </form>
         
     </footer>
