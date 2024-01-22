@@ -12,20 +12,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
 
     <style>
         h1{
-            color:rgb(5, 235, 82)
+            color:rgb(5, 235, 82) !important
         }
+
+
+        /* CSS selectors */
+
+        h2,h3{
+            color: blue;
+        }
+
+        #sec1{
+            background-color: aquamarine;
+        }
+
+
+        img.left{
+            float: left;
+            clear: both;
+        }
+        .right{
+            float: right;
+            clear: both;
+        }
+
+        a{
+            color:green
+        }
+
+        nav a{
+            color:rgb(228, 203, 8)
+        }
+        /* nav > a{
+
+        } */
+        h1:first-child{
+            background-color: rgb(57, 81, 1);
+        }
+        article:last-child{
+            background-color: rgb(190, 71, 237);
+        }
+
+
+
 
     </style>
 
 
-    <link rel="stylesheet" href="style.css">
     
+
 </head>
-<body >
+<body>
     
     <!-- Semantics -->
 
@@ -40,50 +81,71 @@
     </nav>
     <main>
         <section id="sec1">
-            <h1>Section 1</h1>
+            <h1 class="left">Section 1</h1>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="left">
+                <a href="">test link</a>
             </article>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="right">
             </article>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="left">
             </article>
         </section>
         <section id="sec2">
             <h1>Section 2</h1>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="right">
             </article>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="left">
             </article>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="right">
             </article>
         </section>
         <section id="sec3">
             <h1>Section 3</h1>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                <img src="./semantics.jpeg" alt="" width="300px">
+                <img src="./semantics.jpeg" alt="" width="300px" class="left">
             </article>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                 <img src="./semantics.jpeg" alt="" width="300px">
+                 <img src="./semantics.jpeg" alt="" width="300px" class="right">
             </article>
             <article>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nam asperiores provident. Necessitatibus voluptatibus molestias magnam, tempora, fugit est fugiat, officia asperiores accusantium odit enim fuga aspernatur ducimus nihil suscipit!</p>
-                 <img src="./semantics.jpeg" alt="" width="300px">
+                 <img src="./semantics.jpeg" alt="" width="300px" class="left">
             </article>
         </section>
+
+        <h1>Table</h1>
+
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
 
     </main>
     <footer>
