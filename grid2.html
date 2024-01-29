@@ -5,19 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin: 0px;
+        }
         .container{
-            outline:5px solid green;  
-            height: 1000px;
+            /* outline:5px solid green;   */
+            height: 100vh;
             display: grid;
             gap:10px;
-            grid-template-columns: auto auto auto auto;
-            /* grid-template-rows: 300px 100px auto auto; */
+            grid-template-columns: 2fr 2fr 4fr 4fr 4fr 4fr 2fr 2fr;
+            grid-template-rows: 1fr 10fr 2fr;
+
+
+            grid-template-areas:
+            "header header header header header header header header"
+            "left left centerPanel centerPanel centerPanel centerPanel right right"
+            "footer footer footer footer footer footer footer footer"
         }
 
-        .box{
-            
-            background-color: aquamarine;  
-            border:2px solid red;  
+
+
+
+        .header{
+            grid-area: header;
+        }
+        .left{
+            grid-area: left;
+        }
+        .centerPanel{
+            grid-area: centerPanel;
+        }
+        .rightPanel{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        .container div{
+            background-color: beige;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
     </style>
 </head>
