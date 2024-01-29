@@ -4,6 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+        body{
+            margin: 0px;
+            background-color: antiquewhite;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #FFFFFF;
+            height: 84px;
+        }
+
+        .left{
+            display: flex;
+            align-items: center;
+        }
+
+        .links{
+            margin-left: 19px;
+        }
+        .links a{
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+            color:#000;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 32px;
+        }
+
+        .right{
+            display: flex;
+            width: 336px;
+            padding: 12px 56px 12px 40px;
+            align-items: center;
+            gap: 12px;
+            background: #F6F6F6;
+
+
+        }
+
+        .right input[type="text"]{
+            color: var(--Black, #000);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: lowercase;
+            border:none;
+            background-color: transparent;
+            width: 70%;
+        }
+        .right input[type="text"]:focus{
+            outline:none;
+        }
+
+
+
+        .right button{
+            margin-left: 40px;
+            margin-right: 12px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
     <nav>
@@ -13,14 +94,19 @@
             </div>
             <div class="links">
                 <a href="">Home</a>
-                <a href="">Products</a>
+                <a href="">Products
+                    <img src="./icon.svg" alt="" height="12px" width="12px">
+                </a>
                 <a href="">About</a>
                 <a href="">Pricing</a>
             </div>
         </div>
         <div class="right">
-            <!-- search icon -->
-            <input type="text" name="search" id="search">
+           
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" name="search" id="search" placeholder="Search for anything">
         </div>
     </nav>
 </body>
