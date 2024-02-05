@@ -12,17 +12,60 @@
             height: 400px;
             background-color: antiquewhite;
             outline: 2px solid;
+        }
+
+
+        .block1{
+            position: static;
+        }
+
+        .block2{
+            position: relative;
+            top:30px;
+            left:50px;
+            top:-100px;
+            background-color: aqua;
+            z-index: -10;
+        }
+
+
+        .block3{
+            /* position: absolute;
+            bottom:10px;
+            right:10px; */
+        }
+
+        .block4{
+            position: fixed;
+            bottom:10px;
+            right:10px;
+        }
+
+        .block1{
+            position: sticky;
+            top:2px;
+        }
+
+        .block5{
+            position: relative;
+        }
+        .block5 h1{
+            position: absolute;
+            right:0px;
+            bottom:0px;
 
         }
+
     </style>
 </head>
 <body>
     <h1>Positioning</h1>
-
-
     <div class="block1">1</div>
     <div class="block2">2</div>
     <div class="block3">3</div>
     <div class="block4">4</div>
+    <div class="block5">
+        <h1>text</h1>
+    </div>
 </body>
 </html>
