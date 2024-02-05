@@ -6,6 +6,9 @@
     <title>Document</title>
 
     <style>
+        body{
+
+        }
         h1{
             color:pink;
 
@@ -13,15 +16,54 @@
 
         p{
             background-color: beige;
-            
+
+        }
+        button{
+            display: none;
+        }
+        @media screen and (max-width:500px){
+            body{
+                background-color: blueviolet;
+
+            }
         }
 
+        @media screen  and (min-width:300px) and (max-width:1000px) {
+                h1{
+            color:red;
 
+            }
+        }
+
+        @media screen and (orientation:landscape){
+            p{
+                background-color: rgb(232, 202, 9);
+            }
+        }
+
+        @media screen and (max-width:250px) {
+            h1{
+                display: none;
+            }
+            button{
+                display: block;
+            }
+        }
+
+        @media print{
+            body{
+                padding: 0px 30px;
+            }
+            h1{
+                color:black
+            }
+        }
 
     </style>
 </head>
 <body>
     <h1>Heading</h1>
+    <button>Menu</button>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quis voluptas dolor, perferendis fugiat, ratione ipsum praesentium neque hic dolorem sequi! Cupiditate, nisi. Voluptatem enim, quos nam vel ipsam quae?</p>
 </body>
 </html>
